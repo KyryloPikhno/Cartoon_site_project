@@ -17,6 +17,7 @@ export class CharactersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.characterService.getByEpisode().subscribe(value => {
       // this.currentPage = page
       this.characterCall = value

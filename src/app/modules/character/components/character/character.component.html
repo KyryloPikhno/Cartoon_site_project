@@ -1,22 +1,31 @@
 <mat-card *ngIf="character" class="box">
+    <div class="img">
+      <img  mat-card-image src="{{character.image}}" alt="{{character.name}}">
+    </div>
+
+  <div class="info">
   <mat-card-title class="header">
     {{character.name}}
   </mat-card-title>
 
   <mat-card-content class="content">
     <div>
-      Id: {{character.gender}}
+      Id: {{character.id}}
     </div>
     <div>
-<!--      Episode: {{episode.episode}}-->
+      Cpecies: {{character.species}}
     </div>
     <div>
-<!--      Air date: {{episode.air_date}}-->
+      Status: {{character.status}}
     </div>
     <div>
-<!--      Created: {{episode.created}}-->
+      Origin name: {{character.origin.name}}
+    </div>
+    <div>
+      Created: {{character.created}}
     </div>
   </mat-card-content>
+  </div>
 
 <!--  <mat-card-actions class="wrap">-->
 <!--&lt;!&ndash;    <button mat-raised-button color="primary" (click)="getDetails()">Get details</button>&ndash;&gt;-->

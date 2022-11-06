@@ -7,4 +7,9 @@ export interface ICharacter{
   gender: string;
   image: string;
   url: string;
+  created: string;
+  origin: {
+    name: string;
+    url: string;
+  }
 }

@@ -15,11 +15,12 @@ import {CharacterService} from "./services";
     CharacterComponent,
     CharacterDetailsComponent
   ],
-  imports: [
-    CommonModule,
-    CharacterRoutingModule,
-    MatCardModule
-  ],
+    imports: [
+        CommonModule,
+        CharacterRoutingModule,
+        MatCardModule,
+
+    ],
   exports: [
     CharactersComponent
   ],

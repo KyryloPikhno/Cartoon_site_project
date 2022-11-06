@@ -1,0 +1,26 @@
+<mat-card *ngIf="episode" class="box">
+  <mat-card-title class="header">
+    {{episode.name}}
+  </mat-card-title>
+
+  <mat-card-content class="content">
+    <div>
+      Id: {{episode.id}}
+    </div>
+    <div>
+      Episode: {{episode.episode}}
+    </div>
+    <div>
+      Air date: {{episode.air_date}}
+    </div>
+    <div>
+      Created: {{episode.created}}
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions class="wrap">
+    <button  mat-raised-button color="primary" (click)="getDetails()">Get details</button>
+  </mat-card-actions>
+</mat-card>
+
+

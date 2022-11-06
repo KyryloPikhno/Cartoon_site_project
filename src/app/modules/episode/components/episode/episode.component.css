@@ -1,0 +1,20 @@
+.box{
+  width: 450px;
+  padding: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap,.header{
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  font-size: 18px;
+  margin-bottom: 10px;
+}

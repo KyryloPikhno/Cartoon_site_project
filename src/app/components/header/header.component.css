@@ -1,0 +1,17 @@
+.header {
+  height: 30px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a{
+  padding-right: 300px;
+  text-decoration: none;
+  color: black;
+}
+
+.header a.active{
+  color:red;
+}

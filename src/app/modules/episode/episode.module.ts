@@ -8,6 +8,7 @@ import { EpisodeComponent } from './components/episode/episode.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {EpisodeService} from "./services";
+import {CharacterModule} from "../character/character.module";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {EpisodeService} from "./services";
     CommonModule,
     EpisodeRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    CharacterModule
   ],
   providers:[
     EpisodeService

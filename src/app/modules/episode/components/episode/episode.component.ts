@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute, Router, RouterLink} from "@angular/router";
+import {Router} from "@angular/router";
 
 import {IEpisode} from "../../interfaces";
 
@@ -13,14 +13,14 @@ export class EpisodeComponent implements OnInit {
   @Input()
   episode: IEpisode
 
-  constructor(private router: Router, private activateRouter: ActivatedRoute, private routerLink:RouterLink) {
+  constructor(private router: Router) {
   }
 
 
   ngOnInit(): void {
   }
 
-  // getDetails(): void {
-  //   // this.router.navigate([this.episode.id+'/info'], {relativeTo: this.activateRouter})
-  // }
+  getDetails(): void {
+    this.router.navigate(['info/'+this.episode.id])
+  }
 }

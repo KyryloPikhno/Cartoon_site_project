@@ -1,4 +1,4 @@
-import {IPaginatedData} from "./pagination-data.interface";
+import { IPaginatedData } from "./pagination-data.interface";
 import {IEpisode} from "./episode.interface";
 
 

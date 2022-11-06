@@ -4,5 +4,6 @@ export interface IEpisode {
   episode: string;
   air_date: string;
   created: string;
+  url: string;
 }
 

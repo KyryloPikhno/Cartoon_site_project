@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {CharacterService} from "../../services";
-import {ICharacter} from "../../interfaces";
-import {Route} from "@angular/router";
+import {ICharacterResponse} from "../../interfaces";
 
 
 @Component({
@@ -11,14 +10,16 @@ import {Route} from "@angular/router";
   styleUrls: ['./characters.component.css']
 })
 export class CharactersComponent implements OnInit {
-  characters:ICharacter[]
+  characterCall: ICharacterResponse;
 
-  constructor(private characterService: CharacterService, private route:Route) {
+
+  constructor(private characterService: CharacterService) {
   }
 
-
-
   ngOnInit(): void {
-    this.characterService.getByEpisode().subscribe(value => this.characters = value)
+    this.characterService.getByEpisode().subscribe(value => {
+      // this.currentPage = page
+      this.characterCall = value
+    });
   }
 }

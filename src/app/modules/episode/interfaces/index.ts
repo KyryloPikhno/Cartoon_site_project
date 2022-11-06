@@ -1,3 +1,3 @@
 export * from './episode.interface';
-export * from './pagination-data.interface';
+export * from '../../character/interfaces/pagination-data.interface';
 export * from './episodeResponse.interface'

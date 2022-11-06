@@ -8,6 +8,7 @@ import {HeaderComponent} from "./components/header/header.component";
 import {AppRoutingModule} from "./app.routing.module";
 import {EpisodeModule} from "./modules/episode/episode.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 
 @NgModule({
@@ -16,13 +17,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainLayoutComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    EpisodeModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        EpisodeModule,
+        BrowserAnimationsModule,
+        MatToolbarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

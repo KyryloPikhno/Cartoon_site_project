@@ -19,7 +19,7 @@
   </mat-card-content>
 
   <mat-card-actions class="wrap">
-    <button  mat-raised-button color="primary" (click)="getDetails()">Get details</button>
+    <button mat-raised-button color="primary" [routerLink]="['/info']" [state]="{episode}">Get details</button>
   </mat-card-actions>
 </mat-card>
 

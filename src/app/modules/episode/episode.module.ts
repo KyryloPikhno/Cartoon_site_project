@@ -7,6 +7,7 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
 import { EpisodeComponent } from './components/episode/episode.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import {EpisodeService} from "./services";
 
 
 @NgModule({
@@ -24,6 +25,9 @@ import {MatButtonModule} from "@angular/material/button";
     EpisodeRoutingModule,
     MatCardModule,
     MatButtonModule
+  ],
+  providers:[
+    EpisodeService
   ]
 })
 export class EpisodeModule { }

@@ -5,6 +5,8 @@ import { CharacterRoutingModule } from './character-routing.module';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CharacterComponent } from './components/character/character.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
+import {MatCardModule} from "@angular/material/card";
+import {CharacterService} from "./services";
 
 
 @NgModule({
@@ -13,9 +15,13 @@ import { CharacterDetailsComponent } from './components/character-details/charac
     CharacterComponent,
     CharacterDetailsComponent
   ],
-  imports: [
-    CommonModule,
-    CharacterRoutingModule
+    imports: [
+        CommonModule,
+        CharacterRoutingModule,
+        MatCardModule
+    ],
+  providers:[
+    CharacterService
   ]
 })
 export class CharacterModule { }

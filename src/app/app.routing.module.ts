@@ -8,9 +8,11 @@ import {MainLayoutComponent} from "./layouts";
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
+      {path: '', redirectTo: '/episodes',pathMatch: 'full'},
       {path: 'episodes', loadChildren: () => import('./modules/episode/episode.module').then(value => value.EpisodeModule)},
+      {path: 'info' , loadChildren: () => import('./modules/character/character.module').then(value => value.CharacterModule)}
     ]
-  }
+  },
 ];
 
 @NgModule({

@@ -1,1 +1,24 @@
-<p>character works!</p>
+<mat-card *ngIf="character" class="box">
+  <mat-card-title class="header">
+    {{character.name}}
+  </mat-card-title>
+
+  <mat-card-content class="content">
+    <div>
+      Id: {{character.gender}}
+    </div>
+    <div>
+<!--      Episode: {{episode.episode}}-->
+    </div>
+    <div>
+<!--      Air date: {{episode.air_date}}-->
+    </div>
+    <div>
+<!--      Created: {{episode.created}}-->
+    </div>
+  </mat-card-content>
+
+<!--  <mat-card-actions class="wrap">-->
+<!--&lt;!&ndash;    <button mat-raised-button color="primary" (click)="getDetails()">Get details</button>&ndash;&gt;-->
+<!--  </mat-card-actions>-->
+</mat-card>

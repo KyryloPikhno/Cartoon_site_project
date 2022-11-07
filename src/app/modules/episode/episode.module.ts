@@ -9,13 +9,20 @@ import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {EpisodeService} from "./services";
 import {CharacterModule} from "../character/character.module";
+import { CharacterComponent } from './components/character/character.component';
+import { CharactersOfEpisodeComponent } from './components/characters-of-episode/characters-of-episode.component';
+import { CharacterOfEpisodeComponent } from './components/character-of-episode/character-of-episode.component';
 
 
 @NgModule({
   declarations: [
     EpisodeComponent,
     EpisodeDetailsComponent,
-    EpisodesComponent
+    EpisodesComponent,
+
+    CharacterComponent,
+    CharactersOfEpisodeComponent,
+    CharacterOfEpisodeComponent
   ],
   exports: [
     EpisodeComponent,

@@ -5,7 +5,7 @@ const {API} = environment;
 
 const urls = {
   characters: `${API}/character`,
-  locations: `${API}/locations`,
+  locations: `${API}/location`,
   episodes: `${API}/episode`
 };
 

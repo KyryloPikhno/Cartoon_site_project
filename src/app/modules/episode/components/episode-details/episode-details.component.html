@@ -1,1 +1,12 @@
+
 <p>episode-details works!</p>
+<div *ngIf="currentEpisode">
+  <div>{{currentEpisode.id}}</div>
+  <div>{{currentEpisode.name}}</div>
+  <div>{{currentEpisode.episode}}</div>
+<app-characters-of-episode [currentEpisode]="currentEpisode"></app-characters-of-episode>
+</div>
+
+
+
+

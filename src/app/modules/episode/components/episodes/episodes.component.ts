@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import {EpisodeService} from "../../services";
 import {IEpisodeResponse} from "../../interfaces";
@@ -13,6 +13,8 @@ export class EpisodesComponent implements OnInit {
   episodesCall: IEpisodeResponse;
   pages: number[];
   currentPage = 1;
+
+
 
   constructor(private episodeService:EpisodeService) { }
 

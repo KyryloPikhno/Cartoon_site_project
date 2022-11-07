@@ -8,9 +8,8 @@ import {MainLayoutComponent} from "./layouts";
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
-      {path: '', redirectTo: '/episodes',pathMatch: 'full'},
-      {path: 'episodes', loadChildren: () => import('./modules/episode/episode.module').then(value => value.EpisodeModule)},
-      {path: 'info/:id' , loadChildren: () => import('./modules/character/character.module').then(value => value.CharacterModule)}
+      {path: '', redirectTo: '/episode',pathMatch: 'full'},
+      {path: 'episode', loadChildren: () => import('./modules/episode/episode.module').then(value => value.EpisodeModule)}
     ]
   },
 ];

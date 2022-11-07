@@ -5,5 +5,6 @@ export interface IEpisode {
   air_date: string;
   created: string;
   url: string;
+  characters: string[];
 }
 

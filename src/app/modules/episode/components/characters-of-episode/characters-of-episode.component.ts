@@ -13,6 +13,7 @@ export class CharactersOfEpisodeComponent implements OnInit {
   id:number
   character: ICharacter
   characters = new Array<ICharacter>();
+  array:ICharacter[]
 
   @Input()
   currentEpisode: IEpisode;
@@ -22,12 +23,31 @@ export class CharactersOfEpisodeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.currentEpisode.characters.map(url=>{
-      let res = url.split('/')[5]
-      this.episodeService.getCharactersById(res).subscribe(value =>{
-      this.characters.push(value)
-      // this.ar = this.characters
+    this.currentEpisode.characters.map(url => {
+      this.id = +url.split('/')[5]
+      this.episodeService.getCharactersById(this.id).subscribe(value => {
+        this.characters.push(value)
+        console.log(this.characters);
+
       })
-    })
+    });
+
+    // this.currentEpisode.characters.map(url => {
+    //   this.id = +url.split('/')[5]
+    // });
+
+
+    // this.currentEpisode.characters.map(url=>{
+   //    let id = url.split('/')[5]
+   //    this.episodeService.getCharactersById(id).subscribe(value =>{
+   //      this.array.push(value)
+   //       this.characters = this.array
+   //       console.log(this.characters);
+
+
+        // this.characters.map(value=> this.res = value)
+        // console.log(this.res);
+    //   })
+    // })
   }
 }
